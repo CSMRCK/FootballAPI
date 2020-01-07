@@ -1,0 +1,30 @@
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-3">
+      <h3>Competition list</h3>
+      <p><b>Just click on the blue button to see the list of matches!</b></p>
+      <p>Available competitions: 2000,2001,2002,2003,2013,2014, 2015,2016,2017,2018,2019,2021</p>
+      <div class="row" *ngFor="let competition of competitionsList">
+        <div class="col-sm-4">
+          <button class="btn btn-primary" (click)="getMatches(competition.id)" >{{competition.id}}</button>
+        </div>
+       {{competition.name}}
+        <hr/>
+      </div>
+    </div>
+    <div class="col-lg-5">
+      <div class="row2" *ngFor="let match of matchesList">
+          <p>{{match.homeTeam.name}} vs {{match.awayTeam.name}}</p>
+        <hr/>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+

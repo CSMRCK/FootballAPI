@@ -1,0 +1,18 @@
+.container{
+  padding-top: 30px;
+}
+.col-lg-3{
+  background-color: lightgrey;
+}
+
+h3{
+  padding: 5px;
+  color: darkblue;
+}
+.col-lg-5{
+
+  background-color: rgb(223,223,223);
+}
+.row2{
+  text-align: center;
+}
